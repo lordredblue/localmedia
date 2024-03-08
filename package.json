@@ -2,9 +2,9 @@
   "name": "localmedia",
   "version": "5.2.0",
   "license": "ISC",
-  "homepage": "https://github.com/otalk/localmedia#readme",
+  "homepage": "https://github.com/lordredblue/localmedia#readme",
   "bugs": {
-    "url": "https://github.com/otalk/localmedia/issues"
+    "url": "https://github.com/lordredblue/localmedia/issues"
   },
   "keywords": [
     "webrtc",
@@ -13,25 +13,22 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/otalk/localmedia.git"
+    "url": "git+ssh://git@github.com/lordredblue/localmedia.git"
   },
   "main": "localmedia.js",
   "description": "WebRTC abstraction for managing local media streams.",
   "dependencies": {
-    "wildemitter": "^1.0.0",
-    "getscreenmedia": "^5.1.2",
+    "getscreenmedia": "git+https://github.com/lordredblue/getScreenMedia.git",
     "hark": "^1.0.0",
-    "mockconsole": "0.0.x"
+    "mockconsole": "0.0.x",
+    "wildemitter": "^1.0.0"
   },
   "devDependencies": {
-    "browserify": "^13.1.0",
+    "browserify": "^17.0.0",
     "jshint": "^2.9.5",
     "precommit-hook": "^3.0.0",
-    "tape": "^4.6.0",
-    "webrtc-adapter": "^6.0.0"
-  },
-  "peerDependencies": {
-    "webrtc-adapter": "^6.0.0"
+    "tape": "^5.7.5",
+    "webrtc-adapter": "^8.2.3"
   },
   "testling": {
     "files": "test/*.js"
